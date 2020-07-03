@@ -1,0 +1,313 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+html {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.navigation {
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 20px; */
+    justify-content: space-between;
+    background-color: whitesmoke;
+}
+
+.item {
+    /* border: 1px solid red; */
+    padding: 20px;
+}
+
+.sign {
+    /* border: 1px solid blue; */
+    padding: 20px;
+}
+
+.sign button {
+    padding: 5px 20px;
+    color: #333;
+    background-color: white;
+    outline-color: white;
+    border-radius: 10px;
+}
+
+.navigation a {
+    color: #333;
+    font-size: 26px;
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+}
+
+.navigation a:hover {
+    border-radius: 30px;
+    -webkit-box-shadow: -9px 13px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -9px 13px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: -9px 13px 5px 0px rgba(0,0,0,0.75);
+}
+.item #gede {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* end nav */
+.main {
+    padding-top: 100px;
+    flex-wrap: wrap;
+    display: flex;
+    background-color:whitesmoke;
+    height: 100vh;
+    justify-content: space-around;
+    /* border-radius: 10px; */
+    /* -webkit-box-shadow: -9px 13px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -9px 13px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: -9px 13px 5px 0px rgba(0,0,0,0.75); */
+}
+
+.mainLeft {
+    width: 500px;
+    height: 500px;
+    background-image: url('/assets/tripod.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: bisque; */
+    border-radius: 10px;
+    -webkit-box-shadow: -9px 13px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -9px 13px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: -9px 13px 5px 0px rgba(0,0,0,0.75);
+}
+
+.mainRight {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #333; */
+    /* border-radius: 10px;
+    -webkit-box-shadow: -9px 13px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -9px 13px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: -9px 13px 5px 0px rgba(0,0,0,0.75); */
+}
+.mainRight .textMain h1, p, button {
+    margin: 20px;
+}
+.textMain h1 {
+    font-size: 50px;
+}
+
+.textMain p {
+    font-size: 25px;
+    font-style: italic;
+}
+.textMain button {
+    font-size: 20px;
+    /* margin: 5px 20px; */
+    padding: 5px 20px;
+    color: #333;
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+.textMain #btn1 {
+    color: whitesmoke;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+/* end main top */
+
+/* start buyer main */
+
+.belovedh2 {
+    text-align: center;
+    color: #555;
+    font-size: 36px;
+}
+.main-buyer {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: space-around;
+    background-color: white;
+    padding-top: 50px;
+}
+
+.main-buyer .item-buyer {
+    height: 300px;
+    width: 400px;
+    /* background-color: whitesmoke; */
+    border-radius: 5px;
+}
+.item-buyer img {
+    margin: 20px 20px;
+}
+
+/* end buyer */
+
+/* start main2 */
+
+.main2 {
+    padding-top: 100px;
+    flex-wrap: wrap;
+    display: flex;
+    background-color:white;
+    /* height: 100vh; */
+    justify-content: space-around;
+}
+
+.main2-text {
+    width: 650px;
+    height: 500px;
+    border-radius: 10px;
+    -webkit-box-shadow: -9px 13px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -9px 13px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: -9px 13px 5px 0px rgba(0,0,0,0.75);
+    background-color: whitesmoke;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.main2-cam {
+    width: 650px;
+    height: 600px;
+    background: url('/assets/camera1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main2-text h1 {
+    text-align: center;
+    /* color: #555; */
+    font-size: 36px;
+}
+
+.main2-text p {
+    text-align: center;
+    /* color: #555; */
+    font-size: 25px;
+}
+
+/* end main2 */
+
+.main3 {
+    padding-top: 100px;
+    flex-wrap: wrap;
+    display: flex;
+    background-color:white;
+    height: auto;
+    justify-content: space-around;
+}
+
+.main3-text {
+    width: 650px;
+    height: 500px;
+    border-radius: 10px;
+    -webkit-box-shadow: 11px 13px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 11px 13px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 11px 13px 5px 0px rgba(0,0,0,0.75);
+    background-color: whitesmoke;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.main3-cam {
+    width: 650px;
+    height: 600px;
+    background: url('/assets/camera2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main3-text h1 {
+    text-align: center;
+    /* color: #555; */
+    font-size: 36px;
+}
+
+.main3-text p {
+    text-align: center;
+    /* color: #555; */
+    font-size: 25px;
+}
+
+/* footer */
+
+.footer {
+    height: 200px;
+    background-color: #333;
+    display: flex;
+    align-items: flex-end;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-text {
+    color: whitesmoke;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* main 4 */
+
+.main4 {
+    padding-top: 100px;
+    flex-wrap: wrap;
+    display: flex;
+    background-color:white;
+    /* height: 100vh; */
+    justify-content: space-around;
+}
+
+.main4-text {
+    width: 650px;
+    height: 500px;
+    border-radius: 10px;
+    -webkit-box-shadow: -9px 13px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -9px 13px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: -9px 13px 5px 0px rgba(0,0,0,0.75);
+    background-color: whitesmoke;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.main4-cam {
+    width: 650px;
+    height: 600px;
+    background: url('/assets/camera1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main4-text h1 {
+    text-align: center;
+    /* color: #555; */
+    font-size: 36px;
+}
+
+.main4-text p {
+    text-align: center;
+    /* color: #555; */
+    font-size: 25px;
+}
+
+
+@media only screen and (max-width: 1316px) {
+    .main-buyer, .belovedh2 {
+        padding-top: 300px;
+        margin-top: 300px;
+    }
+  }
