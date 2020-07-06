@@ -1,9 +1,13 @@
+
+/* css reset  */
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Nanum Gothic', sans-serif;
 }
+
 html {
     font-family: 'Nanum Gothic', sans-serif;
 }
@@ -23,22 +27,127 @@ html {
     background-color: wheat;
 }
 
+/* ------------------------- */
+
 .item {
     /* border: 1px solid red; */
-    padding: 20px;
+  padding: 20px;
+  background-color: #414141;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: relative;
+  width: 100%;
+  z-index: 3;
 }
+.item ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+.item li a {
+    display: block;
+    color: #414141;
+     padding: 20px 20px;
+     text-decoration: none;
+}
+.item li a:hover, .item .menu-btn:hover {
+    background-color: rgba(0, 0, 0, 0.10);
+}
+
+.item .active {
+    color: #fff;
+    display: block;
+    float: left;
+    font-size: 1.5em;
+    padding: 12px 20px;
+    text-decoration: none;
+}
+
+.item .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+.item .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    /* float: right; */
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+.item .menu-icon .navicon {
+    background: #fff;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+   
+  .item .menu-icon .navicon:before,
+  .item .menu-icon .navicon:after {
+    background: #fff;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+   
+  .item .menu-icon .navicon:before {
+    top: 5px;
+  }
+   
+  .item .menu-icon .navicon:after {
+    top: -5px;
+  }
+   
+  /* menu btn */
+   
+  .item .menu-btn {
+    display: none;
+  }
+   
+  .item .menu-btn:checked ~ .menu {
+    max-height: 340px;
+  }
+   
+  .item .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+   
+  .item .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+   
+  .item .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+   
+  .item .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .item .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+
+
+ /* ------------------------------ */
+
 
 .sign {
     /* border: 1px solid blue; */
     padding: 20px;
 }
 
-.sign button {
+.linkBtn {
     padding: 5px 20px;
+    margin-top: 0;
     color: #333;
     background-color: white;
     outline-color: white;
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 
 .navigation a {
@@ -69,6 +178,7 @@ html {
 .main {
     padding-top: 100px;
     flex-wrap: wrap;
+    display: flex;
     display: flex;
     background-color:whitesmoke;
     height: 100vh;
@@ -184,7 +294,7 @@ html {
 }
 
 .main2-cam {
-    width: 650px;
+    min-width: 650px;
     height: 600px;
     background: url('/assets/camera1.png');
     background-position: center;
@@ -230,7 +340,7 @@ html {
 }
 
 .main3-cam {
-    width: 650px;
+    min-width: 650px;
     height: 600px;
     background: url('/assets/camera2.png');
     background-position: center;
@@ -293,7 +403,7 @@ html {
 }
 
 .main4-cam {
-    width: 650px;
+    min-width: 650px;
     height: 600px;
     background: url('/assets/camera1.png');
     background-position: center;
@@ -345,3 +455,46 @@ html {
         margin-top: 100px;
     }
   }
+
+   /* ------------------------------ */
+
+  @media only screen and (max-width: 768px){
+    .item ul{
+        background-color: #fff;
+    }  
+    .item li a {
+    padding: 15px;
+    border-bottom: 1px dotted #ddd;
+  
+  }
+}
+ 
+@media only screen and (min-width: 768px) {
+    .menu-wrapper{
+        background: #414141;
+        height: 55px;
+        line-height: 55px;
+        width: 100%;
+    }
+  .item li {
+    float: left;
+  }
+    .header .logo{
+        line-height: 1;
+    }
+  .item li a {
+    color: #fff;
+    padding: 0px 30px;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+  
+  }
+  .item .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .item .menu-icon {
+    display: none;
+  }
+}
+/* ------------------- */
