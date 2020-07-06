@@ -13,12 +13,14 @@ html {
     flex-wrap: wrap;
 }
 .navigation {
-    align-content: center;
+    width: 100%;
+    position: fixed;
+    /* align-content: center; */
     display: flex;
     flex-wrap: wrap;
     /* padding: 20px; */
     justify-content: space-between;
-    background-color: whitesmoke;
+    background-color: wheat;
 }
 
 .item {
@@ -56,6 +58,11 @@ html {
 .item #gede {
     font-size: 36px;
     font-weight: bold;
+}
+
+.tab {
+    height: 50px;
+    width: 100%;
 }
 
 /* end nav */
@@ -118,8 +125,8 @@ html {
     border-radius: 5px;
 }
 .textMain #btn1 {
-    color: whitesmoke;
-    background-color: #333;
+    color: #333;
+    background-color: wheat;
     border-radius: 5px;
 }
 
@@ -245,7 +252,7 @@ html {
 
 .footer {
     height: 200px;
-    background-color: #333;
+    background-color: wheat;
     display: flex;
     align-items: flex-end;
     align-items: center;
@@ -253,7 +260,7 @@ html {
 }
 
 .footer-text {
-    color: whitesmoke;
+    color: #333;
     font-size: 20px;
     text-align: center;
     padding: 20px;
